@@ -1,4 +1,9 @@
 # Cloud-Computing-projects
+
+This repository contains the projects of the Cloud Computing course at the Amirkabir University of Technology.
+> Instructor: [Dr. Javadi](https://scholar.google.com/citations?user=Va7RTUsAAAAJ&hl=en)
+
+
 In this project, we developed an app inspired by [privetnote](https://privnote.com/). 
 This lightweight application is by flask, dockerized, and deployed on Kubernetes. 
 
