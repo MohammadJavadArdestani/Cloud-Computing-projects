@@ -30,7 +30,7 @@ We use the StatefulSet object, and we have replicated MySQL pods. To deploy the 
 for l in $(ls | grep '.yaml'); do kubectl apply -f $l; done;
 ```
 
-This commcand applys the following yaml files which can be found in [K8s_files] ([http;//?](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/tree/main/Privenotes/K8s_files)): 
+This commcand applys the following yaml files which can be found in [K8s_files] (https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/tree/main/Privenotes/K8s_files): 
 
 * components.yaml
 * config-map.yaml
