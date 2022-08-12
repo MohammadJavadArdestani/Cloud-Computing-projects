@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Template Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .container {
+        max-width: 450px;
+        padding-top: 100px;
+      }
+      div.inline { float:left; }
+      .clearBoth { clear:both; }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+            <div  class ="inline" style=" border: 2px solid black; padding: 10px; margin: 10px">
+                <p>Link is ready</p>
+                <a href="{{ note_url }}">{{ note_url }}</a>
+                </div>
+            </div>
+
+    </div>
+
+  </body>
+</html>
