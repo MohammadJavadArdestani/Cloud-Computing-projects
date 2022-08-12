@@ -17,7 +17,15 @@ We containerized the project by writing a multistage build Dockerfile. You can f
 docker pull mjavadardestani/secretnotes
 ```
 ## Deployment via Docker Compose
-we created a YML file to define the services with a single command, can spin everything up or tear it all down.To deploy the project via Docker Compose, run the following command:
+we created a YML file to define the services with a single command, can spin everything up or tear it all down. You can fine the file [here](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/docker-compose.yml) and deploy the project via Docker Compose, run the following command:
 ```bash
 docker-compose up -d
+```
+
+## Deployment in Kubernetes
+For deployment in Kubernetes, we have to write ConfigMap, Secret, PV, PVC, Deployment, and Service files and apply them. We also use an HPA component on the Kubernetes cluster for auto-scaling.
+
+We use the StatefulSet object, and we have replicated MySQL pods. To deploy the project, run the following command in the K8s_files directory:
+```bash
+for l in $(ls | grep '.yaml'); do kubectl apply -f $l; done;
 ```
