@@ -16,3 +16,8 @@ We containerized the project by writing a multistage build Dockerfile. You can f
 ```bash
 docker pull mjavadardestani/secretnotes
 ```
+## Deployment via Docker Compose
+we created a YAML file to define the services with a single command, can spin everything up or tear it all down.To deploy the project via Docker Compose, run the following command:
+```bash
+docker-compose up -d
+```
