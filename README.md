@@ -44,3 +44,9 @@ This commcand applys the following yaml files which can be found in [K8s_files] 
 * secret.yaml
 * statefulset.yaml
 
+## Test the project
+By the following command you can access the Home page of secretnotes and use this application.
+```bash
+kubectl port-forward service/flask-service 8080:8080 Forwarding from 127.0.0.1:8080 ->8080
+```bash
+
