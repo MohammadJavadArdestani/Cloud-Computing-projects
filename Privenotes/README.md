@@ -3,11 +3,11 @@ In this project, we developed an app inspired by [privetnote](https://privnote.c
 This lightweight application is by flask, dockerized, and deployed on Kubernetes. 
 
 ## Table of Contents
-- [Web Application](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#web-application)
-- [Containerize](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#containerize)
-- [Deployment by Docker Compose](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#deployment-via-docker-compose)
-- [Deployment in Kubernetes](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#deployment-in-kubernetes)
-- [Test the Project](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#test-the-project)
+- [Web Application](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#web-application)
+- [Containerize](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#containerize)
+- [Deployment by Docker Compose](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#deployment-via-docker-compose)
+- [Deployment in Kubernetes](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#deployment-in-kubernetes)
+- [Test the Project](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#test-the-project)
 
 
 
