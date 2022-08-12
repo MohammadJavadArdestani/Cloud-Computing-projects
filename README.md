@@ -21,3 +21,11 @@ we created a YML file to define the services with a single command, can spin eve
 ```bash
 docker-compose up -d
 ```
+
+## Deployment in Kubernetes
+For deployment in Kubernetes, we have to write ConfigMap, Secret, PV, PVC, Deployment, and Service files and apply them. We also use an HPA component on the Kubernetes cluster for auto-scaling.
+
+We use the StatefulSet object, and we have replicated MySQL pods. To deploy the project, run the following command in the K8s_files directory:
+```bash
+for l in $(ls | grep '.yaml'); do kubectl apply -f $l; done;
+```
