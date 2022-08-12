@@ -3,7 +3,11 @@ In this project, we developed an app inspired by [privetnote](https://privnote.c
 This lightweight application is implemented by flask, dockerized, and deployed on Kubernetes. 
 
 ## Table of Contents
-
+- [Web Application](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#web-application)
+- [Containerize](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#containerize)
+- [Deployment by Docker Compose](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#deployment-via-docker-compose)
+- [Deployment in Kubernetes](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#deployment-in-kubernetes)
+- [Test the Project](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#test-the-project)
 
 
 
@@ -16,8 +20,8 @@ We containerized the project by writing a multistage build Dockerfile. You can f
 ```bash
 docker pull mjavadardestani/secretnotes
 ```
-## Deployment via Docker Compose
-we created a YML file to define the services with a single command, can spin everything up or tear it all down. You can fine the file [here](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/docker-compose.yml) and deploy the project via Docker Compose, run the following command:
+## Deployment by Docker Compose
+we created a YML file to define the services with a single command, can spin everything up or tear it all down. You can fine the file [here](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/docker-compose.yml) and deploy the project by Docker Compose, run the following command:
 ```bash
 docker-compose up -d
 ```
@@ -30,7 +34,7 @@ We use the StatefulSet object, and we have replicated MySQL pods. To deploy the 
 for l in $(ls | grep '.yaml'); do kubectl apply -f $l; done;
 ```
 
-This commcand applys the following yaml files which can be found in [K8s_files] (https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/tree/main/Privenotes/K8s_files): 
+This commcand applys the following yaml files which can be found in [K8s_files](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/tree/main/Privenotes/K8s_files): 
 
 * components.yaml
 * config-map.yaml
@@ -44,9 +48,9 @@ This commcand applys the following yaml files which can be found in [K8s_files] 
 * secret.yaml
 * statefulset.yaml
 
-## Test the project
+## Test the Project
 By the following command you can access the Home page of secretnotes and use this application.
 ```bash
 kubectl port-forward service/flask-service 8080:8080 Forwarding from 127.0.0.1:8080 ->8080
-```bash
+```
 
