@@ -1,6 +1,6 @@
 # Cloud-Computing-projects
 In this project, we developed an app inspired by [privetnote](https://privnote.com/). 
-This lightweight application is implemented by flask, dockerized, and deployed on Kubernetes. 
+This lightweight application is by flask, dockerized, and deployed on Kubernetes. 
 
 ## Table of Contents
 - [Web Application](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects#web-application)
@@ -49,7 +49,7 @@ This commcand applys the following yaml files which can be found in [K8s_files](
 * statefulset.yaml
 
 ## Test the Project
-By the following command you can access the Home page of secretnotes and use this application.
+By the following command you can access the Home page of secretnotes by 127.0.0.1:8080 and use this application.
 ```bash
 kubectl port-forward service/flask-service 8080:8080 Forwarding from 127.0.0.1:8080 ->8080
 ```
