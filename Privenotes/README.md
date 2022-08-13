@@ -1,16 +1,28 @@
 # Cloud-Computing-projects
 In this project, we developed an app inspired by [privetnote](https://privnote.com/). 
-This lightweight application is by flask, dockerized, and deployed on Kubernetes. 
+This application is by flask, dockerized, and deployed on Kubernetes. 
+
+ we implemented all parts of projects as a team of two:<br>
+> [Mahvash Siavashpour](https://github.com/mahvash-siavashpour) <br>
+> [MohammadJavad Ardestani](https://github.com/MohammadJavadArdestani) <br>
+
+
+
 
 ## Table of Contents
+- [Requirements](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#requirements)
 - [Web Application](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#web-application)
 - [Containerize](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#containerize)
 - [Deployment by Docker Compose](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#deployment-by-docker-compose)
 - [Deployment in Kubernetes](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#deployment-in-kubernetes)
 - [Test the Project](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/blob/main/Privenotes/README.md#test-the-project)
 
-
-
+## Requirements
+* Install [Docker](https://docs.docker.com/get-docker/). 
+* Install [Minikube](https://minikube.sigs.k8s.io/docs/start/).
+```bash
+pip install -r requirements.txt
+```
 ## Web Application
 This web application lets you create notes and, after that, gives you a  link to access the notes' content; each note can be read only once. After reading the message or after a specific amount of time (the Default is 30 seconds, but it is configurable), the note will be deleted. 
 The web server is implemented using ```Flask```, which is connected to a ```MySQL``` database. You can find codes [here](https://github.com/MohammadJavadArdestani/Cloud-Computing-projects/tree/main/Privenotes/app). 
